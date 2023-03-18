@@ -10,4 +10,8 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(3)).toBe("Fizz");
     })
 
+    it("returns Buzz when argument is 5",()=>{
+        expect(fizzBuzz(5)).toBe("Buzz");
+    })
+
 });
