@@ -18,4 +18,12 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(15)).toBe("FizzBuzz");
     })
 
+    describe("for multiples of 15",()=>{
+        it("returns FizzBuzz",()=>{
+            expect(fizzBuzz(30)).toBe("FizzBuzz");
+            expect(fizzBuzz(45)).toBe("FizzBuzz");
+            expect(fizzBuzz(60)).toBe("FizzBuzz");
+        })
+    })
+
 });
