@@ -10,4 +10,8 @@ describe('palindrome checker', () => {
         expect(palindrome("mom")).toBe(true);
     })
 
+    it("returns false when passed bill",()=>{
+        expect(palindrome("bill")).toBe(false);
+    })
+
 })
