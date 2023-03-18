@@ -34,4 +34,12 @@ describe("fizzbuzz", () => {
         })
     })
 
+    describe("for multiples of 3 that are not multiples of 5",()=>{
+        it("returns Buzz",()=>{
+            expect(fizzBuzz(9)).toBe("Fizz");
+            expect(fizzBuzz(18)).toBe("Fizz");
+            expect(fizzBuzz(81)).toBe("Fizz");
+        })
+    })
+
 });
