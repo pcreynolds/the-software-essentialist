@@ -9,7 +9,6 @@ export function palindrome(value:string = ""):boolean{
     while(headIndex < tailIndex){
         const head = value[headIndex++];
         const tail = value[tailIndex--];
-        console.log(value,head,tail);
         if(head !== tail){
             return false;
         }
