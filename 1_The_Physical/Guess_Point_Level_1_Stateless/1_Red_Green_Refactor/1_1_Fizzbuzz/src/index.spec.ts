@@ -18,6 +18,14 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(15)).toBe("FizzBuzz");
     })
 
+    it("returns \"11\" when argument is 11",()=>{
+        expect(fizzBuzz(11)).toBe("11");
+    })
+
+    it("returns \"98\" when argument is 98",()=>{
+        expect(fizzBuzz(98)).toBe("98");
+    })
+
     describe("for multiples of 15",()=>{
         it("returns FizzBuzz",()=>{
             expect(fizzBuzz(30)).toBe("FizzBuzz");
