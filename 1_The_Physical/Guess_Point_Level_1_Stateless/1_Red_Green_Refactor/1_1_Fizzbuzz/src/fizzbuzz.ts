@@ -1,5 +1,8 @@
 export function fizzBuzz(value: number):string {
-    if(value % 15 === 0 ){
+
+    if(value < 1 || value > 100) {
+        return "";
+    } else if(value % 15 === 0 ){
         return "FizzBuzz";
     } else if(value % 5 === 0) {
         return "Buzz";

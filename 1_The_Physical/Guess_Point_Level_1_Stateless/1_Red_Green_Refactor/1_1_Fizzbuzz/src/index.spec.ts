@@ -26,6 +26,14 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(98)).toBe("98");
     })
 
+    it("returns \"\" when argument is < 1",()=>{
+        expect(fizzBuzz(0)).toBe("");
+    })
+
+    it("returns \"\" when argument is > 100",()=>{
+        expect(fizzBuzz(101)).toBe("");
+    })
+
     describe("for multiples of 15",()=>{
         it("returns FizzBuzz",()=>{
             expect(fizzBuzz(30)).toBe("FizzBuzz");
